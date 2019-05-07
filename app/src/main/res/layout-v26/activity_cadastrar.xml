@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ActivityCadastrar">
+
+    <RadioGroup
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:layout_marginTop="20dp" >
+
+        <RadioButton
+            android:id="@+id/radio_oferecer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oferecer"
+            android:textSize="20sp"
+                      />
+        <!--android:onClick = "onRadioButtonClicked"-->
+
+
+        <RadioButton
+            android:id="@+id/radio_buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar"
+            android:textSize="20sp"/>
+        <!--android:onClick = "onRadioButtonClicked"-->
+
+    </RadioGroup> <!--Tipo-->
+
+    <TextView
+        android:id="@+id/text_destino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/destino"
+        android:textSize="15sp"
+        android:layout_marginTop="100dp" />
+
+    <RadioGroup
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:layout_marginTop="120dp" >
+
+
+        <RadioButton
+            android:id="@+id/radio_picos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/picos_teresina"
+            android:textSize="20sp"/>
+            <!--android:onClick = "onRadioButtonClicked"-->
+
+
+        <RadioButton
+            android:id="@+id/radio_teresina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teresina_picos"
+            android:textSize="20sp"/>
+            <!--android:onClick = "onRadioButtonClicked"-->
+
+    </RadioGroup> <!--Destino-->
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data"
+        android:textSize="15sp"
+        android:layout_marginTop="200dp"
+        /> <!--Text Data-->
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_date"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="200dp"
+        android:layout_toEndOf="@+id/text_date"
+        android:layout_toRightOf="@+id/text_date"
+        android:text="Horário"
+        android:textSize="15sp" /> <!--Text Hora-->
+
+    <EditText
+        android:id="@+id/edit_Data"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/dd_mm"
+        android:inputType="date"
+        android:layout_marginTop="220dp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/xx_xx"
+        android:inputType="time"
+        android:layout_alignTop="@+id/edit_Data"
+        android:layout_toRightOf="@+id/edit_Data"
+        android:layout_toEndOf="@+id/edit_Data"
+        android:layout_marginLeft="220dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_comentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/coment_rio"
+        android:textSize="15sp"
+        android:layout_marginTop="280dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="300dp"
+        android:autofillHints="" />
+
+
+    <Button
+        android:id="@+id/bot_cadastrar"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+
+
+</RelativeLayout>

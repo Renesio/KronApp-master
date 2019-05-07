@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">KronApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="text_fragment_minha">Suas caronas postadas: </string>
+
+    <string name="destino">Destino:</string>
+    <string name="picos_teresina"><![CDATA[Picos > Teresina]]></string>
+    <string name="teresina_picos"><![CDATA[Teresina > Picos]]></string>
+
+    <string name="tipo">Tipo:</string>
+    <string name="oferecer">Oferecer</string>
+    <string name="buscar">Buscar</string>
+
+    <string name="data">Data:</string>
+    <string name="hor_rio">Horário:</string>
+    <string name="dd_mm">DD/MM</string>
+
+    <string name="cadastrar">Cadastrar</string>
+    <string name="xx_xx">XX:XX</string>
+    <string name="coment_rio">Comentário</string>
+
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="registrar">Registrar</string>
+
+    <string-array name="titles_tab">
+        <item>Minhas</item>
+        <item>Cadastrar</item>
+        <item>Procurar</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Sem pstagens</string>
+    <string name="sair">Sair</string>
+</resources>
