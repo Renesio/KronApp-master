@@ -6,33 +6,7 @@
     android:orientation="vertical"
     tools:context=".Activities.ActivityCadastrar">
 
-    <RadioGroup
-        android:id="@+id/radios"
-        android:layout_width = "match_parent"
-        android:layout_height = "wrap_content"
-        android:orientation = "vertical"
-        android:layout_marginTop="20dp" >
-
-        <RadioButton
-            android:id="@+id/radio_oferecer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/oferecer"
-            android:textSize="20sp"
-                      />
-        <!--android:onClick = "onRadioButtonClicked"-->
-
-
-        <RadioButton
-            android:id="@+id/radio_buscar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/buscar"
-            android:textSize="20sp"/>
-
-        <!--android:onClick = "onRadioButtonClicked"-->
-
-    </RadioGroup> <!--Tipo-->
+    <!--Tipo-->
 
     <!--Destino-->
 
@@ -40,7 +14,7 @@
         android:id="@+id/id_de"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:text="@string/de" />
 
     <Spinner
@@ -60,7 +34,7 @@
         android:id="@+id/id_para"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="70dp"
         android:text="@string/para" />
 
     <Spinner
@@ -83,7 +57,7 @@
         android:layout_height="wrap_content"
         android:text="@string/data"
         android:textSize="15sp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="120dp"
         /> <!--Text Data-->
 
     <TextView
@@ -106,7 +80,7 @@
         android:ems="10"
         android:hint="@string/dd_mm"
         android:inputType="date"
-        android:layout_marginTop="220dp"/>
+        android:layout_marginTop="140dp"/>
 
     <EditText
         android:id="@+id/edit_Hora"
@@ -129,19 +103,19 @@
         android:layout_height="wrap_content"
         android:text="@string/coment_rio"
         android:textSize="15sp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="200dp"
         />
 
 
     <EditText
         android:id="@+id/edit_coment"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="230dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:layout_marginTop="300dp"
-        android:autofillHints="" />
+        android:inputType="textMultiLine" />
 
 
     <Button
@@ -152,7 +126,7 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="600dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"

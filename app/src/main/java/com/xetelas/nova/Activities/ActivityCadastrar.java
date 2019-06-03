@@ -11,7 +11,10 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.xetelas.nova.Objects.Caronas;
 import com.xetelas.nova.R;
+
+import java.util.ArrayList;
 
 public class ActivityCadastrar extends AppCompatActivity {
 
@@ -20,13 +23,14 @@ public class ActivityCadastrar extends AppCompatActivity {
     RadioButton botradio;
     EditText data, hora, coment;
     Button botaocadastro;
+    Caronas uma;
+    ArrayList<Caronas> todas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar);
 
-        tipo = findViewById(R.id.radios);
         de = findViewById(R.id.spinner_de);
         para = findViewById(R.id.spinner_para);
         data = findViewById(R.id.edit_Data);
@@ -44,6 +48,7 @@ public class ActivityCadastrar extends AppCompatActivity {
                 pegar(v);
             }
         });
+
     }
 
     public void pegar (View v){
@@ -55,10 +60,8 @@ public class ActivityCadastrar extends AppCompatActivity {
         String date = data.getText().toString();
         String time = hora.getText().toString();
         String com = coment.getText().toString();
-        String tudo = "informações:\nTipo: " + escolha + "\nDe: " + bora + "\nPara: " + indo + "\nData: " + date + "\nHorário: " + time + "\nComentário: " + com;
-
-        Toast.makeText(getApplicationContext(), "aaaaaaaa" + tudo, Toast.LENGTH_SHORT).show();
+        uma = new Caronas(bora, indo, date, time, com);
+        todas.add(uma);
     }
-
 
 }

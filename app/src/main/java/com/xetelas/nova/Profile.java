@@ -49,7 +49,6 @@ public class Profile extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.sair) {
-
             firebaseAuth.getInstance().signOut();
             finish();
             Intent intent = new Intent(this,MainActivity.class);
